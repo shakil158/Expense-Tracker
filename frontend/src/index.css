@@ -1,0 +1,297 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  /* --primary: #1aac46; */
+  --primary: #BAFF39;
+  --error: #e7195a;
+}
+
+body {
+  background: #f1f1f1;
+  /* background: #fff; */
+  margin: 0;
+  font-family: "Poppins";
+}
+
+header {
+  background: #fff;
+  background-color: #6E6E6E;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container {
+  color: white;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+.login-section a {
+  color: #fff;
+}
+
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  padding-top: 0px;
+  margin: 0 auto;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 100px;
+}
+
+.expensesSummary {
+  background-color: lightgrey;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  margin-bottom: 10px;
+  margin-top: 0px;
+  
+}
+.expense-summary {
+
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: large;
+
+}
+.expense-summary div {
+  /* background-color: var(--primary);; */
+  border: 2px solid darkgray;
+  border-radius: 8px;
+  margin: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  width: 30%;
+  height: 70px;
+  text-align: center;
+  overflow: auto;
+  line-height: 10px;
+
+}
+.expense-details {
+  background: lightgray;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 10px 30px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.expense-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: black;
+}
+.expense-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.expenses-list {
+  overflow-y: scroll;
+  height: 430px;
+  margin-top: 0px;
+}
+.expense-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+.expense-details button {
+  margin-top: 10px;
+}
+/* new workout form */
+label, input, select, textarea {
+  display: block;
+}
+input,select,textarea {
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  /* color: white; */
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  transform: scale(1.1);
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+.SortFilter {
+  display: flex;
+  align-items: baseline;
+  white-space: 10px;
+}
+.SortFilter label {
+  margin-right: 10px;
+  /* display: block; */
+}
+
+.SortFilter select {
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 40%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: medium;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+nav button {
+  background: var(--primary);
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 15px;
+}
+
+.filters {
+
+  display: flex;
+  /* justify-content: space-around; */
+  margin-top: 10px;
+  font-size: large;
+
+}
+
+.filters div {
+  /* margin-right: 1000px; */
+  width: 300px;
+}
+
+.SortFilter {
+  margin-left: 100px;
+  width: 700px;
+}
+
+.SortFilter select {
+  width: 200px;
+}
+
+.expense-details i {
+  padding-right: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.expenditure {
+  background-color: #FFCCCB;
+}
+
+.savings {
+  background-color: lightgreen;
+}
+
+.expense-details button {
+  background: green;
+  color: white;
+  border: 0; 
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.expense-details button:hover {
+  transform: scale(1.2);
+}
+
+.material-symbols-outlined:hover {
+  transform: scale(1.3);
+}
+
+.edit-expense {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.edit-expense strong {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.edit-expense input,select {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.edit-expense button {
+  background: darkgray;
+  border: 0; 
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 15px;
+}
